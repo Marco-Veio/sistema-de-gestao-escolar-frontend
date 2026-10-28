@@ -39,8 +39,8 @@
   --font-weight-h3: 700;
   --font-weight-body: 400; /* regular */
   --font-weight-label: 700;
-  --font-weight-caption: 400;
-  --font-weight-data: 300; /* light */
+  --font-weight-caption: 300;
+  --font-weight-data: 400; /* light */
 
   /* Espaçamentos */
   --spacing-xs: 4px;
