@@ -1,24 +1,22 @@
 import Button from "@/components/Button";
+import Input from "@/components/Input";
 
 export default function Login() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-screen gap-xs bg-background">
-      <div>
-        <h1 className="text-h1 font-h1 text-text">Login</h1>
-        <p className="text-body font-body text-text-muted">
-          Use seu email institucional
-        </p>
+    <div className="h-screen w-screen">
+      <div className="h-full w-full flex flex-col items-center justify-center px-3xl gap-lg bg-background">
+        <div className="w-full">
+          <h1 className="text-h1 font-h1 text-text">Login</h1>
+          <p className="text-body font-body text-text-muted">
+            Use seu email institucional
+          </p>
+        </div>
+
+        <form className="flex flex-col w-full">
+          <Input id="email" label="Email" />
+          <Button variant="primary">Entrar</Button>
+        </form>
       </div>
-
-      <form>
-        <Button variant="danger" disabled>
-          Entrar
-        </Button>
-      </form>
-
-      <p className="text-caption font-caption text-text-muted">
-        Esqueceu sua senha? Fale com a coordenação.
-      </p>
     </div>
   );
 }

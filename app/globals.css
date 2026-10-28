@@ -62,8 +62,3 @@
   --breakpoint-tablet: 640px;
   --breakpoint-desktop: 1024px;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-}
