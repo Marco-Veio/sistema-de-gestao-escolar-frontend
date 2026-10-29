@@ -6,7 +6,7 @@ export default function Login() {
     <div className="h-screen w-screen">
       <div className="h-full w-full flex flex-col items-center justify-center px-3xl gap-lg bg-background">
         <div className="w-full">
-          <h1 className="text-h1 font-h1 text-text">Login</h1>
+          <h1 className="text-h1 font-h1 text-text font-title">Login</h1>
           <p className="text-body font-body text-text-muted">
             Use seu email institucional
           </p>

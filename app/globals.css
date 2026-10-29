@@ -22,7 +22,7 @@
   --color-transparent-surface: rgba(255, 255, 255, 0.2); /* #ffffff33 */
 
   /* Fontes */
-  --font-text: var(--font-segoe-ui);
+  --font-text: var(--font-source-serif-4);
   --font-title: var(--font-source-serif-4);
   --font-data: var(--font-space-mono);
 
