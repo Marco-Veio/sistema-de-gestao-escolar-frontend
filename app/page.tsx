@@ -1,6 +1,8 @@
 import Button from "@/components/Button";
 import Input from "@/components/Input";
 
+import { login } from "./actions";
+
 export default function Login() {
   return (
     <div className="h-screen w-screen">
@@ -12,15 +14,12 @@ export default function Login() {
           </p>
         </div>
 
-        <form className="flex flex-col w-full">
-          <Input
-            id="email"
-            label="Email"
-            caption="Teste"
-            required
-            error="ferrou"
-          />
-          <Button variant="primary">Entrar</Button>
+        <form className="flex flex-col w-full" action={login}>
+          <Input id="email" label="Email" name="email" />
+          <Input id="password" label="Senha" name="senha" type="password" />
+          <Button type="submit" variant="primary">
+            Entrar
+          </Button>
         </form>
       </div>
     </div>
