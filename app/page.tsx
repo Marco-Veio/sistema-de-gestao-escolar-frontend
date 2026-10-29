@@ -13,7 +13,13 @@ export default function Login() {
         </div>
 
         <form className="flex flex-col w-full">
-          <Input id="email" label="Email" />
+          <Input
+            id="email"
+            label="Email"
+            caption="Teste"
+            required
+            error="ferrou"
+          />
           <Button variant="primary">Entrar</Button>
         </form>
       </div>
