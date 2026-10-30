@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import Input from "@/components/Input";
+import { Mail, Lock } from "lucide-react";
 
 import { login } from "./actions";
 
@@ -14,9 +15,16 @@ export default function Login() {
           </p>
         </div>
 
-        <form className="flex flex-col w-full" action={login}>
-          <Input id="email" label="Email" name="email" />
-          <Input id="password" label="Senha" name="senha" type="password" />
+        <form className="flex flex-col w-full gap-sm" action={login}>
+          <Input id="email" label="Email" name="email" required icon={Mail} />
+          <Input
+            id="password"
+            label="Senha"
+            name="senha"
+            type="password"
+            required
+            icon={Lock}
+          />
           <Button type="submit" variant="primary">
             Entrar
           </Button>
