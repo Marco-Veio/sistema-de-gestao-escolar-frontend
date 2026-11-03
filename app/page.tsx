@@ -29,6 +29,10 @@ export default function Login() {
             Entrar
           </Button>
         </form>
+
+        <p className="text-caption font-caption text-text-muted">
+          Esqueceu sua senha? Fale com a coordenação.
+        </p>
       </div>
     </div>
   );
