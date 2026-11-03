@@ -31,7 +31,7 @@ export default function Input({
     <div className="flex flex-col">
       <label
         htmlFor={id}
-        className="text-text text-label font-label flex gap-1"
+        className="text-text text-label font-label flex gap-xs"
       >
         {label} {required && <p className="text-error">*</p>}
       </label>
