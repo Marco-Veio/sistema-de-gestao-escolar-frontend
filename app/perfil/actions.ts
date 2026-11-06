@@ -93,7 +93,7 @@ export default async function editFuncionarioData(
 
   if (response.status === 200) {
     revalidateTag("pegarDadosFuncionario", "max");
-    return;
+    redirect("/perfil");
   }
 
   const data = await response.json();
