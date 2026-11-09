@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import Input from "@/components/Input";
 import editFuncionarioData, { getFuncionarioData } from "./actions";
+import Header from "@/components/Header";
 
 export default async function Perfil() {
   const funcionario = await getFuncionarioData();
@@ -9,7 +10,7 @@ export default async function Perfil() {
 
   return (
     <div>
-      <h1>Meu Perfil</h1>
+      <Header title="Meu Perfil" />
 
       <form action={editAction}>
         <Input
