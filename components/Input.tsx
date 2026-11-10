@@ -44,7 +44,7 @@ export default function Input({
           id={id}
           {...props}
           className={twMerge(
-            "w-full p-sm bg-surface border border-border-strong rounded-sm text-data text-text font-data placeholder:text-text-muted focus:border-primary focus:outline-none focus:shadow-[0px_0px_4px_2px_rgb(0_0_0/50%)]",
+            "w-full p-sm bg-surface border border-border-strong rounded-sm text-data text-text font-data placeholder:text-text-muted focus:border-primary focus:outline-none focus:shadow-[0px_0px_4px_2px_rgb(0_0_0/50%)] disabled:bg-primary-soft disabled:text-text-muted disabled:cursor-not-allowed",
             variant === "rounded" && "rounded-full",
             error && "border-error",
             Icon && "pl-2xl",

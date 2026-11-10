@@ -9,10 +9,13 @@ export default async function Perfil() {
   const editAction = editFuncionarioData.bind(null, funcionario.id);
 
   return (
-    <div>
+    <div className="w-screen h-screen bg-background flex flex-col">
       <Header title="Meu Perfil" />
 
-      <form action={editAction}>
+      <form
+        action={editAction}
+        className="flex flex-col gap-md m-xl px-xl py-2xl bg-surface rounded-xl overflow-y-auto flex-1"
+      >
         <Input
           label="Nome Completo"
           required
@@ -47,6 +50,7 @@ export default async function Perfil() {
           required
           defaultValue={funcionario.cargo}
           name="cargo"
+          disabled
         />
         <Input label="Nova Senha" name="senha" />
 
